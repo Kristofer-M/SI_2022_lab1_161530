@@ -1,0 +1,29 @@
+git config --global user.name "Kristofer Mladenovski"  //оваа команда го поставува името "Kristofer Mladenovski" како корисник на овој компјутер
+git config --global user.email "mladenovski.kristofer@gmail.com" //оваа команда го поставува e-mailот "mladenovski.kristofer@gmail.com" како корисник на овој компјутер
+git clone https://github.com/Kristofer-M/SI_2022_lab1_161530.git //оваа команда креаира локален репозиториум на овој компјутер од дадениот оддалечен репозиториум
+git add shopping_list.txt //оваа компанда го додава fileот "shopping_list.txt" за да биде tracked од git
+git commit -m "Add 5 items to the shopping list" //оваа команда додава commit со дадена порака
+git add shopping_list.txt //со add се додаваат и промени направени во fileот во stage
+git commit -m "Add quantities to the items."
+git branch branch1 //branch командата креира нов branch со дадено име
+git branch branch2
+git push --all origin //push командата заедно со --all ги синхронизира сите гранки со оддалечениот репозиториум
+git checkout branch1 //оваа команда го менува HEAD поинтерот да покажува на дадена гранка
+git add shopping_list.txt
+git commit -m "Change quantity of item #5"
+git add shopping_list.txt
+git commit -m "Change quantity of item #2"
+git push --all origin
+git checkout branch2
+git add shopping_list.txt
+git commit -m "Modify item #4"
+git add shopping_list.txt
+git commit --amend -m “Modify item #4 and add item #6” //--amend аргументот го менува последниот commit со дадените промени на fileовите и името
+git checkout master
+git merge branch 1
+git merge branch 2
+git add shopping_list.txt
+git commit -m "resolve conflict" //овде користев commit и add бидејќи треба да се реши конфликтот измеѓу branch2 и master
+git add "161530.txt"
+git commit -m "Add docs"
+git push --all origin
