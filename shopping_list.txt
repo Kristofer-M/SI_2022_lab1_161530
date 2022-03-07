@@ -1,5 +1,5 @@
-bread
-water
-soda
-apple
-pineapple
+bread x 1
+water x 2
+soda x 3
+apple x 4
+pineapple x 5
